@@ -1,5 +1,9 @@
 # MemoryLitmus
 
+[![CI](https://github.com/dnega-dev/MemoryLitmus/actions/workflows/ci.yml/badge.svg)](https://github.com/dnega-dev/MemoryLitmus/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)](https://www.python.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 MemoryLitmus is a zero-runtime-dependency Python 3.9+ conformance suite for **agent-memory semantics**. It is a test harness and executable contract—not a memory store, vector database, or recommendation that every agent use one memory model.
 
 Memory systems make different, legitimate product choices. MemoryLitmus therefore grades adapters against explicit capability profiles. It asks whether an adapter behaves consistently with capabilities it declares; it does not claim that a flat fact model, graph model, event log, or any particular retention policy is universally correct.
