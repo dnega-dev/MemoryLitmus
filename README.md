@@ -1,5 +1,9 @@
 # MemoryLitmus
 
+[![CI](https://github.com/dnega-dev/MemoryLitmus/actions/workflows/ci.yml/badge.svg)](https://github.com/dnega-dev/MemoryLitmus/actions/workflows/ci.yml)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-3776AB)](https://www.python.org/)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 MemoryLitmus is a zero-runtime-dependency Python 3.9+ conformance suite for **agent-memory semantics**. It is a test harness and executable contract—not a memory store, vector database, or recommendation that every agent use one memory model.
 
 Memory systems make different, legitimate product choices. MemoryLitmus therefore grades adapters against explicit capability profiles. It asks whether an adapter behaves consistently with capabilities it declares; it does not claim that a flat fact model, graph model, event log, or any particular retention policy is universally correct.
@@ -180,6 +184,23 @@ The unit suite materializes every conformance check as its own `unittest` test a
 ## Security and contribution policy
 
 Please read [SECURITY.md](SECURITY.md) before reporting credential-handling or isolation issues. Contributions should follow [CONTRIBUTING.md](CONTRIBUTING.md). Changes are tracked in [CHANGELOG.md](CHANGELOG.md).
+
+## Assurance toolkit
+
+This repository is part of a set of small, deterministic tools for testing AI-agent and retrieval-system failure boundaries:
+
+- [SourceAdapter-Fuzz](https://github.com/dnega-dev/SourceAdapter-Fuzz) — fault injection for public-data acquisition strategies.
+- [SourceContract](https://github.com/dnega-dev/SourceContract) — conformance testing for official-source ingestion adapters.
+- [ClaimSpec](https://github.com/dnega-dev/ClaimSpec) — executable grounding contracts for research-agent traces.
+- [CitationChaos](https://github.com/dnega-dev/CitationChaos) — citation mutation testing for grounded-answer pipelines.
+- [AsOfGuard](https://github.com/dnega-dev/AsOfGuard) — temporal-contamination detection for RAG and agent memory.
+- [Legal-MCP-Assurance](https://github.com/dnega-dev/Legal-MCP-Assurance) — black-box assurance for legal and retrieval tool servers.
+- [JurisdictionLeakBench](https://github.com/dnega-dev/JurisdictionLeakBench) — retrieval-scope isolation security benchmark.
+- [MemoryLitmus](https://github.com/dnega-dev/MemoryLitmus) — conformance testing for agent-memory semantics.
+- [FailureKata](https://github.com/dnega-dev/FailureKata) — executable practice from coding-agent transcript failures.
+- [FieldQuarantine](https://github.com/dnega-dev/FieldQuarantine) — safe migration of offline submissions across schema changes.
+
+Each project is independently installable and reports deterministic outcomes suitable for local development and CI.
 
 ## License
 
